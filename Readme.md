@@ -4,6 +4,7 @@
 - Vite [https://vitejs.dev/]
 - Sass [https://sass-lang.com/]
 - Typescript [https://www.typescriptlang.org/]
+- Scss Reset [https://www.npmjs.com/package/scss-reset]
 
 ## Installation
 ```
