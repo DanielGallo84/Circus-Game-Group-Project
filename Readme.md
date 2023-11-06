@@ -17,3 +17,15 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+## Project Folder Organization
+
+<b>Src is the Root</b> of the project.
+
+<b>Style.scss</b> in the root folder <b>is the main SCSS archive</b>. Here we import all the general SCSS modules that are applicable for every page.
+
+Index.html in the Root is the Main page.
+
+Every page has its' own folder (game, results). Inside those folders are <b>subfolders</b> that contain modules that are <b>specific only for that page</b>.
+
+The <b>assets</b> folder contains all the assets for the project, <b>including images and general modules</b>.
