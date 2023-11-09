@@ -10,7 +10,10 @@ Nombres de las ramas
 
 Para features:
 
-Camel Case
+kebab-case
+
+feature/home-feature
+
 
 feature/homeFeature
 
