@@ -1,5 +1,5 @@
 // Esto es el archivo principal de SCSS donde importamos todos los modulos principales que se aplican a todas las paginas, como, por ejemplo, el reseteo de SCSS.
 
 @use 'scss-reset/reset';
-@use './assets/sass-modules/general-rules.scss';
-@use './../src/assets/sass-modules/variables.scss';
+@use './assets/sassModules/generalRules.scss';
+@use './../src/assets/sassModules/variables.scss';
