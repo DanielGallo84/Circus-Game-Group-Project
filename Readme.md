@@ -20,6 +20,13 @@ refactoring
 fix
 etc
 
+## Fonts Usage
+
+Para poner las fuentas usen las siguientes reglas:
+
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Jolly Lodger';
+
 ## Dev Dependencies
 - Vite [https://vitejs.dev/]
 - Sass [https://sass-lang.com/]
