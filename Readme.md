@@ -1,5 +1,25 @@
 # Vite Project Base
 
+## Organización de trabajo
+
+Nombres de archivos y sass:
+
+Camel Case
+
+Nombres de las ramas
+
+Para features:
+
+Camel Case
+
+feature/homeFeature
+
+Para otras cosas:
+
+refactoring 
+fix
+etc
+
 ## Dev Dependencies
 - Vite [https://vitejs.dev/]
 - Sass [https://sass-lang.com/]
