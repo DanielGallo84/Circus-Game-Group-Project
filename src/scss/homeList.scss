@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40vh;
+    height: 45vh;
 
     #homePlayersTitle{
         font-size: 2rem;
@@ -39,8 +39,9 @@
                 height: 100%;
 
                 .homePlayerName {
-                    font-size: 2vmax;
+                    font-size: 2.5vmax;
                     margin-right: 2vw;
+                    font-family: 'Jolly Lodger';
                 }
 
                 .homeAvatar {
