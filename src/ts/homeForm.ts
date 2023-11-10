@@ -1,30 +1,13 @@
-let nameButton = document.getElementById('btn_name')
-let startButton = document.getElementById('btn_start')
-let formData = document.getElementById('form_box')
-let playerNames = []
+import { insertName } from "./insertNameButton";
+import { startGameButton } from "./startButton";
 
-nameButton.addEventListener('click', (e) => {
-    e.preventDefault();
+function homeForm() {
+  insertName()
+  startGameButton()
+}
 
-    let name = document.getElementById('nameField').value
+export { homeForm }
 
-    if (name == '') {
-        alert('Please, make sure to type in a valid name address before sending it!')
-      } else {
-        alert('This form has been successfully submitted!')
-        
-        playerNames.push(name)
+// let storedNames = JSON.parse(localStorage.getItem("names"));
 
-        localStorage.setItem('names', JSON.stringify(playerNames))
-        let storedEmail = JSON.parse(localStorage.getItem('names'))
-
-        formData.reset()
-      }
-    });
-
-startButton.addEventListener('click', (e) => {
-  e.preventDefault();
-
-  location.href = "./../pages/game/index.html";
-
-})
+// console.log(storedNames);
