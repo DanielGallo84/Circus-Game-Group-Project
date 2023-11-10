@@ -3,7 +3,13 @@ body {
 	background: url(./../assets/images/backgroundPics/spiralBackground.png);
 	background-attachment: fixed;
 	background-size:cover;
-	margin: 0;
+	height: 100%;
+	width: 100%;
+
+}
+main {
+	width: 100%;
+	height: 90%;
 }
 
 #form_box{
@@ -12,8 +18,8 @@ body {
 	text-align: center;
 	border-radius: 10px;
 	margin: 3em auto;
-	height: 300px;
-	width: 480px;
+	height: 30%;
+	width: 80%;
 	padding: 1em;
 	box-shadow: 0 9px 15px -5px rgb(19, 15, 15);
     position: fixed;

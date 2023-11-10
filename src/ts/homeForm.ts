@@ -16,12 +16,6 @@ let userEmails = []
 //         localStorage.setItem("emails", JSON.stringify(userEmails))
 //         let storedEmail = JSON.parse(localStorage.getItem("emails"))
 
-<<<<<<< HEAD
-//         formData.reset()
-//       }
-//     });
-=======
         formData.reset()
       }
     });*/
->>>>>>> d31b667e7881bd7d27683ffaea39fb274c743380
