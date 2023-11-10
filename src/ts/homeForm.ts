@@ -1,4 +1,4 @@
-let formData = document.getElementById("subscription-form")
+/*let formData = document.getElementById("subscription-form")
 let userEmails = []
 
 formData.addEventListener("submit", (e) => {
@@ -18,4 +18,4 @@ formData.addEventListener("submit", (e) => {
 
         formData.reset()
       }
-    });
+    });*/
