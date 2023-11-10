@@ -1,5 +1,5 @@
-// let formData = document.getElementById("subscription-form")
-// let userEmails = []
+/*let formData = document.getElementById("subscription-form")
+let userEmails = []
 
 // formData.addEventListener("submit", (e) => {
 //     e.preventDefault();
@@ -16,6 +16,12 @@
 //         localStorage.setItem("emails", JSON.stringify(userEmails))
 //         let storedEmail = JSON.parse(localStorage.getItem("emails"))
 
+<<<<<<< HEAD
 //         formData.reset()
 //       }
 //     });
+=======
+        formData.reset()
+      }
+    });*/
+>>>>>>> d31b667e7881bd7d27683ffaea39fb274c743380
