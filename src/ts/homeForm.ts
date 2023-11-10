@@ -1,21 +1,30 @@
-/*let formData = document.getElementById("subscription-form")
-let userEmails = []
+let nameButton = document.getElementById('btn_name')
+let startButton = document.getElementById('btn_start')
+let formData = document.getElementById('form_box')
+let playerNames = []
 
-// formData.addEventListener("submit", (e) => {
-//     e.preventDefault();
+nameButton.addEventListener('click', (e) => {
+    e.preventDefault();
 
-//     let email = document.getElementById("email_field").value
+    let name = document.getElementById('nameField').value
 
-//     if (email == "") {
-//         alert("Please, make sure to type in a valid email address before sending it!")
-//       } else {
-//         alert("This form has been successfully submitted!")
+    if (name == '') {
+        alert('Please, make sure to type in a valid name address before sending it!')
+      } else {
+        alert('This form has been successfully submitted!')
         
-//         userEmails.push(email)
+        playerNames.push(name)
 
-//         localStorage.setItem("emails", JSON.stringify(userEmails))
-//         let storedEmail = JSON.parse(localStorage.getItem("emails"))
+        localStorage.setItem('names', JSON.stringify(playerNames))
+        let storedEmail = JSON.parse(localStorage.getItem('names'))
 
         formData.reset()
       }
-    });*/
+    });
+
+startButton.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  location.href = "./../pages/game/index.html";
+
+})
