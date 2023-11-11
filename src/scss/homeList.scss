@@ -34,9 +34,10 @@
 
             .nameAndAvatarContainer{
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 align-items: center;
                 height: 100%;
+                width: 55%;
                 margin-left: 5%;
 
                 .homePlayerName {
@@ -47,6 +48,10 @@
 
                 .homeAvatar {
                     height: 90%;
+                }
+
+                .nameInput {
+                    width: 15vw;
                 }
             }
 

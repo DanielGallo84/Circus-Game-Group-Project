@@ -3,6 +3,7 @@ import Player from "../assets/tsModules/playerClass";
 import { players } from "../assets/tsModules/playersArray";
 import { addToLocalStorage } from "./addToLocalStorage";
 import { createPlayer } from "./createPlayer";
+import { editName } from "./editButton";
 import { selectRandomAvatar } from "./selectRandomAvatar";
 
 let nameButton = document.getElementById("btn_name");
@@ -32,6 +33,8 @@ function insertName() {
       addToLocalStorage()
       
       createPlayer(newPlayer)
+
+      editName()
 
       formData.reset();
     }

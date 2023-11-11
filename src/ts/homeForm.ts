@@ -7,5 +7,3 @@ function homeForm() {
 }
 
 export { homeForm }
-
-// let storedPlayers = JSON.parse(localStorage.getItem("players"));
