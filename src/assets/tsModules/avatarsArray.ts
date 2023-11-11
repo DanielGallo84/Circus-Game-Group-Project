@@ -1,0 +1,1 @@
+export let avatars:string[] = ['/assets/images/avatars/beardedLady.png', '/assets/images/avatars/boingoClown.png', '/assets/images/avatars/bombHomer.png'];

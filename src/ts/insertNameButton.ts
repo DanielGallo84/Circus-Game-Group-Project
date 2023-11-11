@@ -1,8 +1,12 @@
 import { playAudio } from "../assets/tsModules/audio";
+import Player from "../assets/tsModules/playerClass";
+import { players } from "../assets/tsModules/playersArray";
+import { addToLocalStorage } from "./addToLocalStorage";
+import { createPlayer } from "./createPlayer";
+import { selectRandomAvatar } from "./selectRandomAvatar";
 
 let nameButton = document.getElementById("btn_name");
 let formData = document.getElementById("form_box");
-let playerNames = [];
 
 function insertName() {
   nameButton.addEventListener("click", (e) => {
@@ -21,13 +25,17 @@ function insertName() {
       
       playAudio('./../assets/sounds/squeaky-toy-1.mp3', 0.2)
 
-      playerNames.push(name);
+      let newPlayer = new Player(name, selectRandomAvatar())
 
-      localStorage.setItem("names", JSON.stringify(playerNames));
+      players.push(newPlayer)
+
+      addToLocalStorage()
+      
+      createPlayer(newPlayer)
 
       formData.reset();
     }
   });
 }
 
-export { playerNames,insertName }
+export { insertName }

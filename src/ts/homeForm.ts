@@ -8,6 +8,4 @@ function homeForm() {
 
 export { homeForm }
 
-// let storedNames = JSON.parse(localStorage.getItem("names"));
-
-// console.log(storedNames);
+// let storedPlayers = JSON.parse(localStorage.getItem("players"));

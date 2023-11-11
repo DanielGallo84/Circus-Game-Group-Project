@@ -1,0 +1,1 @@
+export let players: { name: string, avatar: string }[] = [];
