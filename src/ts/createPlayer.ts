@@ -1,8 +1,13 @@
 let playersListDiv = document.querySelector('#homePlayersList')
 
+let index = 0;
+
 export function createPlayer(object) {
-    playersListDiv.innerHTML = /* html */ `
-    <div class="homePlayerDiv" id="homePlayer1">
+
+    index += 1
+
+    playersListDiv.innerHTML += /* html */ `
+    <div class="homePlayerDiv" id="homePlayer${index}">
         <div class="nameAndAvatarContainer">
             <p class="homePlayerName">${object.name}</p>
             <img class="homeAvatar" src=${object.avatar} alt="avatar1">
