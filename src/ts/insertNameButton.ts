@@ -2,6 +2,7 @@ import { playAudio } from "../assets/tsModules/audio";
 import { avatars } from "../assets/tsModules/avatarsArray";
 import Player from "../assets/tsModules/playerClass";
 import { players } from "../assets/tsModules/playersArray";
+import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
 import { addToLocalStorage } from "./addToLocalStorage";
 import { applyNewName } from "./doneButton";
 import { editName } from "./editButton";
@@ -16,7 +17,14 @@ function insertName() {
   nameButton.addEventListener("click", (e) => {
     e.preventDefault();
 
-    let name = document.getElementById("nameField").value;
+    if (retreiveStoredPlayers().length == 25) {
+      alert(
+        'You have reached the maximum number of players'
+      ) 
+    }
+
+    if (retreiveStoredPlayers().length != 25) {
+      let name = document.getElementById("nameField").value;
 
     if (name == "") {
 
@@ -40,8 +48,6 @@ function insertName() {
       addToLocalStorage()
 
       restorePlayersList()
-      
-      // createPlayer(newPlayer)
 
       formData.reset();
 
@@ -50,6 +56,8 @@ function insertName() {
       applyNewName()
 
       removePlayer()
+    }
+
     }
   });
 }

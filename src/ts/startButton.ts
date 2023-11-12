@@ -1,11 +1,24 @@
+import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
+
 let startButton = document.getElementById("btn_start");
 
 function startGameButton() {
-    startButton.addEventListener("click", (e) => {
+
+  startButton.addEventListener("click", (e) => {
     e.preventDefault();
-  
-    location.href = "./../pages/game/index.html";
+
+    if (retreiveStoredPlayers().length < 2) {
+      alert(
+        'You need to have at least 2 players'
+      )
+    }
+
+    if (retreiveStoredPlayers().length >= 2) {
+      location.href = "./../pages/game/index.html";
+    }
+
+    
   });
 }
 
-export { startGameButton }
+export { startGameButton };
