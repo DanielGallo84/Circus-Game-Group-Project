@@ -2,8 +2,8 @@ import { playAudio } from "../assets/tsModules/audio";
 import Player from "../assets/tsModules/playerClass";
 import { players } from "../assets/tsModules/playersArray";
 import { addToLocalStorage } from "./addToLocalStorage";
-// import { createPlayer } from "./createPlayer";
-// import { editName } from "./editButton";
+import { applyNewName } from "./doneButton";
+import { editName } from "./editButton";
 import { restorePlayersList } from "./restorePlayersList";
 import { selectRandomAvatar } from "./selectRandomAvatar";
 
@@ -40,6 +40,10 @@ function insertName() {
       // createPlayer(newPlayer)
 
       formData.reset();
+
+      editName()
+
+      applyNewName()
     }
   });
 }

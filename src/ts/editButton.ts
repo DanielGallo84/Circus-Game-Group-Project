@@ -1,5 +1,4 @@
 import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
-import { applyNewName } from "./doneButton";
 
 function editName() {
 
