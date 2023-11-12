@@ -17,11 +17,14 @@ function restorePlayersList() {
             <img class="homeAvatar" src=${element.avatar} alt="avatar1">
         </div>
         <div class="editAndRemoveContainer" id="editAndRemoveContainer${index + 1}">
+            <button class="doneButton" id="doneButton${index + 1}">
+                <img class="doneImg" src="./assets/images/icons/done-icon.png" alt="done button image">
+            </button>
             <button class="editButton" id="editButton${index + 1}">
-            <img class="editImg" src="./assets/images/icons/edit-pencil-icon.png" alt="edit button image">
+                <img class="editImg" src="./assets/images/icons/edit-pencil-icon.png" alt="edit button image">
             </button>
             <button class="removeButton" id="removeButton${index + 1}">
-            <img class="removeImg" src="./assets/images/icons/remove-icon.png" alt="remove button image">
+                <img class="removeImg" src="./assets/images/icons/remove-icon.png" alt="remove button image">
             </button>
         </div>
     </div>

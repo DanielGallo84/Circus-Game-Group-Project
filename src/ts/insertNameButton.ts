@@ -2,8 +2,8 @@ import { playAudio } from "../assets/tsModules/audio";
 import Player from "../assets/tsModules/playerClass";
 import { players } from "../assets/tsModules/playersArray";
 import { addToLocalStorage } from "./addToLocalStorage";
-import { createPlayer } from "./createPlayer";
-import { editName } from "./editButton";
+// import { createPlayer } from "./createPlayer";
+// import { editName } from "./editButton";
 import { restorePlayersList } from "./restorePlayersList";
 import { selectRandomAvatar } from "./selectRandomAvatar";
 

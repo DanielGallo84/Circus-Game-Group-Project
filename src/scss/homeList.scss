@@ -62,6 +62,15 @@
                 align-items: center;
                 margin-right: 5%;
 
+                .doneButton{
+                    height: 50%;
+                    display: none;
+
+                    .doneImg {
+                        height: 100%;
+                    }
+                }
+
                 .editButton{
                     height: 50%;
 
