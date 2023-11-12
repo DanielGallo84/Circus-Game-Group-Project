@@ -4,6 +4,7 @@ import { players } from "../assets/tsModules/playersArray";
 import { addToLocalStorage } from "./addToLocalStorage";
 import { applyNewName } from "./doneButton";
 import { editName } from "./editButton";
+import { removePlayer } from "./removeButton";
 import { restorePlayersList } from "./restorePlayersList";
 import { selectRandomAvatar } from "./selectRandomAvatar";
 
@@ -44,6 +45,8 @@ function insertName() {
       editName()
 
       applyNewName()
+
+      removePlayer()
     }
   });
 }
