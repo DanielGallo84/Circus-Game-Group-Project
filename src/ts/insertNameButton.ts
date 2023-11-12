@@ -34,8 +34,6 @@ function insertName() {
       
       createPlayer(newPlayer)
 
-      editName()
-
       formData.reset();
     }
   });
