@@ -1,4 +1,6 @@
+import { players } from "../assets/tsModules/playersArray";
 import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
+import { addToLocalStorage } from "./addToLocalStorage";
 
 function applyNewName() {
 
@@ -24,6 +26,9 @@ function applyNewName() {
 
                 doneButton.style.display = 'none'
                 editButton.style.display = 'block'
+
+                players[index - 1].name = nameInput
+                addToLocalStorage()
     
             })
         }
