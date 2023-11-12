@@ -1,3 +1,4 @@
+import { applyNewName } from "./doneButton";
 import { editName } from "./editButton";
 import { insertName } from "./insertNameButton";
 import { restorePlayersList } from "./restorePlayersList";
@@ -8,6 +9,7 @@ function homeForm() {
   insertName()
   startGameButton()
   editName()
+  applyNewName()
 }
 
 export { homeForm }
