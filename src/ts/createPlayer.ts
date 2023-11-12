@@ -14,7 +14,7 @@ export function createPlayer(object) {
             <p class="homePlayerName" id="playerName${index}">${object.name}</p>
             <img class="homeAvatar" src=${object.avatar} alt="avatar1">
         </div>
-        <div class="editAndRemoveContainer">
+        <div class="editAndRemoveContainer" id="editAndRemoveContainer${index}">
             <button class="editButton" id="editButton${index}">
             <img class="editImg" src="./assets/images/icons/edit-pencil-icon.png" alt="edit button image">
             </button>

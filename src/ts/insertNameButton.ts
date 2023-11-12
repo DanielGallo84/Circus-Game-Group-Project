@@ -4,6 +4,7 @@ import { players } from "../assets/tsModules/playersArray";
 import { addToLocalStorage } from "./addToLocalStorage";
 import { createPlayer } from "./createPlayer";
 import { editName } from "./editButton";
+import { restorePlayersList } from "./restorePlayersList";
 import { selectRandomAvatar } from "./selectRandomAvatar";
 
 let nameButton = document.getElementById("btn_name");
@@ -22,7 +23,9 @@ function insertName() {
       alert(
         "Please, make sure to type in a name."
       );
-    } else {
+    } 
+    
+    if (name != "") {
       
       playAudio('./../assets/sounds/squeaky-toy-1.mp3', 0.2)
 
@@ -31,8 +34,10 @@ function insertName() {
       players.push(newPlayer)
 
       addToLocalStorage()
+
+      restorePlayersList()
       
-      createPlayer(newPlayer)
+      // createPlayer(newPlayer)
 
       formData.reset();
     }

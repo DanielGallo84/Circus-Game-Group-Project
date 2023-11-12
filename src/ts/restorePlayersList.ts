@@ -16,7 +16,7 @@ function restorePlayersList() {
             <p class="homePlayerName" id="playerName${index + 1}">${element.name}</p>
             <img class="homeAvatar" src=${element.avatar} alt="avatar1">
         </div>
-        <div class="editAndRemoveContainer">
+        <div class="editAndRemoveContainer" id="editAndRemoveContainer${index + 1}">
             <button class="editButton" id="editButton${index + 1}">
             <img class="editImg" src="./assets/images/icons/edit-pencil-icon.png" alt="edit button image">
             </button>
