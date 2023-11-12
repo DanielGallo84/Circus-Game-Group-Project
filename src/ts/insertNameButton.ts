@@ -1,4 +1,5 @@
 import { playAudio } from "../assets/tsModules/audio";
+import { avatars } from "../assets/tsModules/avatarsArray";
 import Player from "../assets/tsModules/playerClass";
 import { players } from "../assets/tsModules/playersArray";
 import { addToLocalStorage } from "./addToLocalStorage";
@@ -31,6 +32,8 @@ function insertName() {
       playAudio('./../assets/sounds/squeaky-toy-1.mp3', 0.2)
 
       let newPlayer = new Player(name, selectRandomAvatar())
+
+      console.log(avatars)
 
       players.push(newPlayer)
 
