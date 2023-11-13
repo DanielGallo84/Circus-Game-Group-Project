@@ -17,6 +17,7 @@
         align-items: center;
         overflow-y: scroll;
         background-color: rgba(140, 191, 181, 0.5);
+        border: 0.1vmax solid rgb(177, 177, 177);
         border-radius: 1vmax;
         width: 70%;
         height: 100%;
@@ -52,6 +53,7 @@
 
                 .nameInput {
                     width: 15vw;
+                    font-family: 'Jolly Lodger';
                 }
             }
 
@@ -96,3 +98,53 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+
+    #homePlayersSection {
+    
+        #homePlayersList{
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            overflow-y: unset;
+            gap: 5px;
+            grid-auto-rows: minmax(50px, 25%);
+    
+            .homePlayerDiv {
+                height: 100%;
+                width: 100%;
+                background-color: rgba(248, 236, 204, 1);
+                border: 3px solid rgba(255, 102, 61, 1);
+                border-radius: 10px;
+                margin-bottom: 0;
+    
+                .nameAndAvatarContainer{
+                    height: 80%;
+                    width: 40%;
+    
+                    .homePlayerName {
+                        font-size: 1.2vmax;
+                    }
+    
+                    .nameInput {
+                        width: 7vw;
+                    }
+                }
+    
+                .editAndRemoveContainer {
+                    height: 50%;
+    
+                    .editButton{
+                        height: 50%;
+    
+                        .editImg {
+                            height: 100%;
+                        }
+                    }       
+                }
+            }
+        }
+    }
+}
+
