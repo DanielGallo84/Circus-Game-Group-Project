@@ -1,13 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const startButton: HTMLButtonElement | null = document.getElementById('startButton') as HTMLButtonElement;
+import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
 
-    if (startButton) {
-        startButton.addEventListener('click', selectRandomPlayer);
-    }
-});
+const startButton: HTMLButtonElement | null = document.getElementById('startButton') as HTMLButtonElement;
 
-function selectRandomPlayer(): void {
-    const popUp: HTMLDivElement = createPopUp();
+export function selectRandomPlayer(): void {
+
+    startButton.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const popUp: HTMLDivElement = createPopUp();
+      const avatars: HTMLCollectionOf<HTMLDivElement> =
+        document.getElementsByClassName(
+          "avatarItem"
+        ) as HTMLCollectionOf<HTMLDivElement>;
+      const avatarsArray: HTMLDivElement[] = Array.from(avatars);
+
+      avatarsArray.forEach((avatar: HTMLDivElement, index: number) => {
+        avatar.classList.add("visible");
+        avatar.style.backgroundColor = "yellow";
+        avatar.dataset.avatarNumber = (index + 1).toString();
+      });
+    });
+
+   /* const popUp: HTMLDivElement = createPopUp();
     const avatars: HTMLCollectionOf<HTMLDivElement> = document.getElementsByClassName('avatarItem') as HTMLCollectionOf<HTMLDivElement>;
     const avatarsArray: HTMLDivElement[] = Array.from(avatars);
 
@@ -15,7 +29,7 @@ function selectRandomPlayer(): void {
         avatar.classList.add('visible');
         avatar.style.backgroundColor = 'yellow';
         avatar.dataset.avatarNumber = (index + 1).toString();
-    });
+    }); */
 
     const remainingAvatars: HTMLDivElement[] = avatarsArray.slice(); 
 
@@ -46,13 +60,13 @@ function selectRandomPlayer(): void {
                 }
             }
 
-            remainingAvatars.splice(randomIndex, 1); 
-        } else {
+           /* remainingAvatars.splice(randomIndex, 1); 
+        } /*else {
             clearInterval(intervalId);
             setTimeout(() => {
                 updatePopUp(popUp, '¡¡¡GANADOR!!!');
                 showPopUp(popUp);
-            }, 100);
+            }, 100); */
         }
     }, 100);
 }
@@ -78,3 +92,5 @@ function showPopUp(popUp: HTMLDivElement): void {
 function hidePopUp(popUp: HTMLDivElement): void {
     popUp.style.display = 'none';
 }
+
+retreiveStoredPlayers

@@ -1,3 +1,12 @@
 import '../../style.scss';
 import './scss/game.scss';
-import './ts/interactiveAvatars';
+import { fillPlayers } from './ts/fillPlayers';
+import { selectRandomPlayer } from './ts/interactiveAvatars';
+/*import './ts/interactiveAvatars'; */
+
+function game () {
+    fillPlayers()
+    selectRandomPlayer()
+}
+
+game ()
