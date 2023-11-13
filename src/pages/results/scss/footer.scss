@@ -1,0 +1,14 @@
+#background{
+    background-image: url('./../../../assets/images/backgroundPics/spiralBackground.png');
+    display:flex;
+    background-size:cover;
+    background-position:center;
+}
+#footerContainer{
+    position: bottom;
+    float: bottom;
+    height: 200px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
