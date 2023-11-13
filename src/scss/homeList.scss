@@ -23,7 +23,7 @@
 
         .homePlayerDiv {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             height: 20%;
             width: 75%;
@@ -34,9 +34,11 @@
 
             .nameAndAvatarContainer{
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 align-items: center;
                 height: 100%;
+                width: 55%;
+                margin-left: 5%;
 
                 .homePlayerName {
                     font-size: 2.5vmax;
@@ -47,6 +49,10 @@
                 .homeAvatar {
                     height: 90%;
                 }
+
+                .nameInput {
+                    width: 15vw;
+                }
             }
 
             .editAndRemoveContainer {
@@ -54,6 +60,16 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin-right: 5%;
+
+                .doneButton{
+                    height: 50%;
+                    display: none;
+
+                    .doneImg {
+                        height: 100%;
+                    }
+                }
 
                 .editButton{
                     height: 50%;
