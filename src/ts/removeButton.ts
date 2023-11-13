@@ -1,6 +1,7 @@
 import { players } from "../assets/tsModules/playersArray";
 import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
 import { addToLocalStorage } from "./addToLocalStorage";
+import { restorePlayersList } from "./restorePlayersList";
 
 function removePlayer() {
 
@@ -19,6 +20,8 @@ function removePlayer() {
 
                 players.splice(index, 1)
                 addToLocalStorage()
+
+                restorePlayersList()
             })
         }
     }
