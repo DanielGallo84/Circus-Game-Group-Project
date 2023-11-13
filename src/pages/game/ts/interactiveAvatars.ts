@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const startButton: HTMLButtonElement | null = document.getElementById('startButton') as HTMLButtonElement;
 
     if (startButton) {
-        startButton.addEventListener('click', selectRandomAvatar);
+        startButton.addEventListener('click', selectRandomPlayer);
     }
 });
 
-function selectRandomAvatar(): void {
+function selectRandomPlayer(): void {
     const popUp: HTMLDivElement = createPopUp();
     const avatars: HTMLCollectionOf<HTMLDivElement> = document.getElementsByClassName('avatarItem') as HTMLCollectionOf<HTMLDivElement>;
     const avatarsArray: HTMLDivElement[] = Array.from(avatars);
