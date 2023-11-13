@@ -9,16 +9,25 @@
 </head>
 <body id="background">
     
-    <div id="headerContainer">
-    <h1 id="titleHeader">GAME RESULTS</h1>
-    </div>
+    <header id="headerContainer">
+        <h1 id="titleHeader">GAME RESULTS</h1>
+    </header>
     <div class="resultsContainer">
 
     </div>
    <div id="footerContainer">
-        <button id="back"><img src="./../../assets/images/icons/back.png" alt="Back"></button>
-        <button id="play"><img src="./../../assets/images/icons/playAgain.png" alt="Play Again"></button>
-        <button id="new"><img src="./../../assets/images/icons/newGame.png" alt="New Game"></button>
+        <div id="backContainer">
+            <button id="backbtn"><img src="./../../assets/images/icons/back.png" alt="Back"></button>
+            <h2 id="backtxt">Back</h2>
+        </div>
+        <div id="playContainer">
+            <button id="playbtn"><img src="./../../assets/images/icons/playAgain.png" alt="Play Again"></button>
+            <h2 id="playtxt">Play again</h2>
+        </div>
+        <div id="newContainer">
+            <button id="newbtn"><img src="./../../assets/images/icons/newGame.png" alt="New Game"></button>
+            <h2 id="newtxt">New Game</h2>
+        </div>
    </div> 
     <script type="module" src="results.ts"></script>
 </body>
