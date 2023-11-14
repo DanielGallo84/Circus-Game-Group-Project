@@ -1,7 +1,7 @@
 import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
 import { retreiveStoredDeletedPlayers } from "./storedDeletedPlayertsList";
 
-let eliminated: { name: string, avatar: string }[] = [];
+export let eliminated: { name: string, avatar: string }[] = [];
 
 export function transformStorageArrays () {
     retreiveStoredDeletedPlayers().forEach(element => {

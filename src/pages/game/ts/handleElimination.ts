@@ -15,9 +15,7 @@ export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlaye
     // una cadena vacía en caso de que el atributo no esté definido). 
     eliminatedPlayers.add(currentAvatar.dataset.avatarNumber || "");
 
-    let eliminatedPlayersArray = (Array.from(eliminatedPlayers));
-
-    eliminatedPlayersLocal = eliminatedPlayersArray
+    eliminatedPlayersLocal = (Array.from(eliminatedPlayers));
 
     currentAvatar.style.display = 'none';
 
