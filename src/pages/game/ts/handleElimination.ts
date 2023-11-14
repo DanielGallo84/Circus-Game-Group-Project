@@ -13,7 +13,7 @@ export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlaye
 
     // Se agrega el número seleccionado a la lista de eliminados. El número del avatar se obtiene a través del data-avatar-name. (El operador '||' para proporcionar 
     // una cadena vacía en caso de que el atributo no esté definido). 
-    eliminatedPlayers.add(currentAvatar.dataset.avatarNumber || "");
+    eliminatedPlayers.add(currentAvatar.dataset.avatarName || "");
 
     let eliminatedPlayersArray = (Array.from(eliminatedPlayers));
 
@@ -25,7 +25,7 @@ export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlaye
     // Antes de hacerlo, se convierte el conjunto eliminatedPlayers a un array utilizando Array.from, y luego se convierte ese array a una cadena JSON antes de almacenarlo.
     localStorage.setItem('eliminatedPlayers', JSON.stringify(Array.from(eliminatedPlayers)));
 
-    updatePopUp(popUp, `Jugador eliminado: ${currentAvatar.dataset.avatarNumber}`);
+    updatePopUp(popUp, `Jugador eliminado: ${currentAvatar.dataset.avatarName}`);
 
     showPopUp(popUp);
 

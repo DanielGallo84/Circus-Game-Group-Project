@@ -8,20 +8,22 @@ import { selectRandomPlayer } from './ts/interactiveAvatars';
 import { createPopUp, hidePopUp, showAndHidePopUp, showPopUp, updatePopUp } from './ts/popUp';
 import { setupAvatar } from './ts/setupAvatar';
 import { shuffleArray } from './ts/shuffleArray';
+import { deleteLocalStorage } from './ts/deleteArray';
 
 function game() {
-  fillPlayers()
-  selectRandomPlayer()
-  retreiveStoredPlayers()
-  createPopUp()
-  hidePopUp
-  showPopUp
-  updatePopUp
-  showAndHidePopUp
-  shuffleArray
-  setupAvatar
-  handleWinner
-  handleElimination
+    fillPlayers()
+    selectRandomPlayer()
+    retreiveStoredPlayers()
+    createPopUp()
+    hidePopUp
+    showPopUp
+    updatePopUp
+    showAndHidePopUp
+    shuffleArray
+    setupAvatar
+    handleWinner
+    handleElimination
+    deleteLocalStorage()
 }
 
 game ()

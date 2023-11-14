@@ -17,7 +17,7 @@ export function showPopUp(popUp: HTMLDivElement): void {
 }
 
 export function hidePopUp(popUp: HTMLDivElement): void {
-    popUp.style.display = 'none';
+    popUp.style.display = "name"
 }
 
 export function showAndHidePopUp(popUp: HTMLDivElement): void {

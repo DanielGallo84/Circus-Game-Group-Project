@@ -8,12 +8,12 @@ export function handleWinner(remainingAvatar: HTMLDivElement, popUp: HTMLDivElem
 
     // Se utiliza el operador de encadenamiento opcional (?.) para intentar acceder al atributo data-avatar-number del elemento remainingAvatar. 
     // Si remainingAvatar es null o undefined, remainingAvatarNumber será undefined. En caso contrario, contendrá el número del avatar.
-    const remainingAvatarNumber = remainingAvatar?.dataset.avatarNumber;
+    const remainingAvatarNumber = remainingAvatar?.dataset.avatarName;
 
     // Hago una verificación condicional para comprobar que el avatar no sea de valor null o undefined
     if (remainingAvatarNumber) {
 
-        updatePopUp(popUp, `¡¡¡GANADOR!!! Jugador: ${remainingAvatarNumber}`);
+        updatePopUp(popUp, `¡¡¡GANADOR!!! Jugador: ${remainingAvatar}`);
 
         eliminatedPlayersLocal.push(remainingAvatarNumber);
 
