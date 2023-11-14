@@ -1,6 +1,6 @@
 import { eliminatedPlayersLocal } from "./handleElimination";
 import { showAndHidePopUp, updatePopUp } from "./popUp";
-import { transformStorageArrays } from "./transformStorageArrays";
+import { transformStorageArrays, uploadEliminatedToStorage } from "./transformStorageArrays";
 import { updateLocalStorage } from "./updateLocalStorage";
 
 // Esta función toma 2 parámetros. "remainingAvatar" que es el avatar que ha ganado y el pop-up del ganador.
@@ -17,11 +17,13 @@ export function handleWinner(remainingAvatar: HTMLDivElement, popUp: HTMLDivElem
 
         eliminatedPlayersLocal.push(remainingAvatarNumber);
 
-        updateLocalStorage()
+        updateLocalStorage();
 
         showAndHidePopUp(popUp);
 
-        transformStorageArrays()
+        transformStorageArrays();
+
+        uploadEliminatedToStorage();
         
     }
 }

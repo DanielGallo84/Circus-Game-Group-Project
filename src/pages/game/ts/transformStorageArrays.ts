@@ -10,3 +10,9 @@ export function transformStorageArrays () {
 
     console.log(eliminated)
 }
+
+export function uploadEliminatedToStorage() {
+
+    localStorage.setItem("eliminated", JSON.stringify(eliminated));
+
+}
