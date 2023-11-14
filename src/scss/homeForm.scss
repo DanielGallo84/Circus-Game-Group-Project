@@ -1,4 +1,3 @@
-
 body {
 	background: url(./../assets/images/backgroundPics/spiralBackground.png);
 	background-attachment: fixed;
@@ -7,6 +6,7 @@ body {
 	width: 100%;
 
 }
+
 main {
 	width: 100%;
 	height: 90%;
@@ -17,7 +17,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-    background: orangered;
+    background: rgba(238, 108, 52, 1);
 	border-radius: 10px;
 	margin: 3em auto;
 	height: 30%;
@@ -28,10 +28,10 @@ main {
 
 #form_box input {
 	width: 210px;
-	border-radius: 10px;
+	border-radius: 1vmax;
     border: black 5px solid;
 	background: #eee;
-	padding: 1em 2em;
+	padding: 3% 3%;
 	border: solid;
 	color: #222;
 	transition: 0.3s linear;
@@ -46,8 +46,6 @@ main {
 	font-family: 'Luckiest Guy', cursive;
 	padding: 0.5em 1.9em;
 	margin: 2.3em 0 0 0;
-	
-	
 	cursor: pointer;
 	font-size: 1em;
 	outline: none;
@@ -55,18 +53,28 @@ main {
     border: solid;
 } 
 
+#nameField {
+	font-family: 'Jolly Lodger';
+	text-align: center;
+}
+
 #btn_name {
 	display: block;
     background: #FFFACD;
     font-size: 1.4em;
-    border-radius: 10px;
+    border-radius: 1vmax;
+}
+
+#bobAndStartContainer {
+	display: flex;
+	align-items: center;
+	margin-right: 8%;
 }
 
 #bobImg {
-	position: absolute;
-	top: 34vh;
-	left: 32vw;
-	width: 50px;
+	position: relative;
+	top: 10px;
+	left: 25px;
     height: 70px;
 }
 
@@ -79,8 +87,30 @@ main {
     -webkit-text-stroke-color: black;
     font-size: 5em;
     border-color: black;
-    border-radius: 15px;
+    border-radius: 2vmax;
 }
 
 #btn_name:hover{transform: translatey(2px);}
 #btn_name:active{transform: translatey(5px);}
+
+@media only screen and (min-width: 768px) {
+	
+	#form_box{
+		margin: 0% auto 3% auto;
+		height: 30%;
+		width: 30%;
+		padding: 1%;
+	}
+	
+	#form_box input {
+		width: 50%;
+		padding: 2% 2%;
+		font-size: 0.9vmax;
+	}
+	
+	#form_box button {
+		padding: 0.5rem 1.5rem;
+		margin: 2.3em 0 0 0;
+		font-size: 1vmax;
+	} 
+}
