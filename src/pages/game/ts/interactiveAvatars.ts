@@ -1,4 +1,3 @@
-import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
 import { handleElimination } from "./handleElimination";
 import { handleWinner } from "./handleWinner";
 import { createPopUp, hidePopUp, showAndHidePopUp, showPopUp, updatePopUp } from "./popUp";
@@ -46,14 +45,3 @@ export function selectRandomPlayer(): void {
         }, 3000);
     });
 }
-
-retreiveStoredPlayers
-createPopUp
-hidePopUp
-showPopUp
-updatePopUp
-showAndHidePopUp
-shuffleArray
-setupAvatar
-handleWinner
-handleElimination

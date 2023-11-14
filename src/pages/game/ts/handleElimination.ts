@@ -1,5 +1,7 @@
 import { showPopUp, updatePopUp } from "./popUp";
 
+export let eliminatedPlayersLocal: string[] = []
+
 // Esta función toma 3 parámetros ya definidos antes. "currentAvatar" que es el avatar que está siendo seleccionado, el set para el seguimiento de los eliminados y
 // el pop-up que indica el número eliminado. 
 export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlayers: Set<string>, popUp: HTMLDivElement): void {
@@ -13,6 +15,10 @@ export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlaye
     // una cadena vacía en caso de que el atributo no esté definido). 
     eliminatedPlayers.add(currentAvatar.dataset.avatarNumber || "");
 
+    let eliminatedPlayersArray = (Array.from(eliminatedPlayers));
+
+    eliminatedPlayersLocal = eliminatedPlayersArray
+
     currentAvatar.style.display = 'none';
 
     // Almaceno la lista de jugadores eliminados en el local storage (perdóname Mark, llevo toda la tarde haciendo esto y como también tenga que hacer la lista me da un ictus)
@@ -25,5 +31,5 @@ export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlaye
 
 }
 
-updatePopUp
-showPopUp
+// updatePopUp
+// showPopUp
