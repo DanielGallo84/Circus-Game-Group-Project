@@ -22,6 +22,8 @@ function removePlayer() {
                 addToLocalStorage()
 
                 restorePlayersList()
+
+                removePlayer()
             })
         }
     }
