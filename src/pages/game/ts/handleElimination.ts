@@ -26,10 +26,6 @@ export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlaye
     // Antes de hacerlo, se convierte el conjunto eliminatedPlayers a un array utilizando Array.from, y luego se convierte ese array a una cadena JSON antes de almacenarlo.
     localStorage.setItem('eliminatedPlayers', JSON.stringify(Array.from(eliminatedPlayers)));
 
-    updateLocalStorage()
-
-    transformStorageArrays()
-
     updatePopUp(popUp, `Eliminated player: ${retreiveStoredPlayers()[currentAvatar.dataset.avatarNumber - 1].name}`);
 
     showPopUp(popUp);
