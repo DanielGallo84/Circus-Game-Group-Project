@@ -21,7 +21,7 @@ export function handleWinner(remainingAvatar: HTMLDivElement, popUp: HTMLDivElem
 
         uploadEliminatedToStorage();
 
-        updatePopUp(popUp, `¡¡¡GANADOR!!! Jugador: ${eliminated[eliminated.length - 1].name}`);
+        updatePopUp(popUp, `And the WINNER is: ${eliminated[eliminated.length - 1].name}!!!`);
 
         showAndHidePopUp(popUp);
         
