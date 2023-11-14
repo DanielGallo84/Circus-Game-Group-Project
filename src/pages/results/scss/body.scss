@@ -17,3 +17,19 @@
     background-color: aqua;
     justify-content: center;
 }
+#sideshowBob{
+    display: none;
+}
+
+@media only screen and (min-width:768px){
+   
+    #sideshowBob{
+        display:flex;
+        height: 10%;
+        width: 10%;
+        justify-self: center;
+        
+        margin-left: 15%;
+
+    }
+}

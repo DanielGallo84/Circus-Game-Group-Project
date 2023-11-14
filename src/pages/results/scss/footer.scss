@@ -26,10 +26,21 @@
     height: 15%;
     width: 15%;
 }
-
-@media only screen and (min-width:768px){
-#footerContainer{
-    display: none;
+#copyright{
+    display:none;
 }
+@media only screen and (min-width:768px){
+    #footerContainer{
+        display: none;
+    }
+    #copyright{
+        color: black;
+        font-family: 'Jolly Lodger' ;
+        font-size: larger;
+        font-weight: bold;
+        display:block;
+        text-align: center;
+        padding-bottom: 5%;
+    }
 
 }
