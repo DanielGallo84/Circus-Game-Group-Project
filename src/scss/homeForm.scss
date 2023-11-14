@@ -1,7 +1,8 @@
 body {
-	background: url(./../assets/images/backgroundPics/spiralBackground.png);
-	background-attachment: fixed;
-	background-size: cover;
+	background-image: url(.././assets/images/backgroundPics/spiralBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 	height: 100%;
 	width: 100%;
 

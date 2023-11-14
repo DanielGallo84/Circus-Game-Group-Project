@@ -4,6 +4,7 @@ import { players } from "../assets/tsModules/playersArray";
 import { addToLocalStorage } from "./addToLocalStorage";
 import { applyNewName } from "./doneButton";
 import { editName } from "./editButton";
+import { hideShowPlayersList } from "./hideShowPlayers";
 import { removePlayer } from "./removeButton";
 import { restorePlayersList } from "./restorePlayersList";
 import { selectRandomAvatar } from "./selectRandomAvatar";
@@ -37,6 +38,8 @@ function insertName() {
       addToLocalStorage()
 
       restorePlayersList()
+
+      hideShowPlayersList()
 
       formData.reset();
 

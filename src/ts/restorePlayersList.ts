@@ -5,9 +5,7 @@ let playersList = document.querySelector('#homePlayersList')
 function restorePlayersList() {
 
     if (retreiveStoredPlayers() != null) {
-        playersList.innerHTML = /* html */ `
-
-    `
+        playersList.innerHTML = /* html */ ``
 
     retreiveStoredPlayers().forEach(function(element, index){
         playersList.innerHTML += /* html */ `
