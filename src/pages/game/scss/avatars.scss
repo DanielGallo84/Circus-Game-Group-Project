@@ -32,53 +32,21 @@
         transition: background-color 0.5s ease;
     }
 
-    .hidden {
-        display: none;
+    @keyframes selectAnimation {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 
-   
 
-}
-
-
-
-
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #3498db;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    display: none;
-    z-index: 1000;
-}
-
-.popup::before {
-    content: '\00D7'; 
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.popup.visible {
-    display: block;
-    animation: fadeInOut 2s ease-in-out;
-}
-
-@keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0;
+    .selected {
+        animation: selectAnimation 2s ease-in-out infinite; 
     }
-    50% {
-        opacity: 1;
-    }
+
 }
