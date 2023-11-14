@@ -1,96 +1,59 @@
 import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
+import { handleElimination } from "./handleElimination";
+import { handleWinner } from "./handleWinner";
+import { createPopUp, hidePopUp, showAndHidePopUp, showPopUp, updatePopUp } from "./popUp";
+import { setupAvatar } from "./setupAvatar";
+import { shuffleArray } from "./shuffleArray";
+
 
 const startButton: HTMLButtonElement | null = document.getElementById('startButton') as HTMLButtonElement;
 
 export function selectRandomPlayer(): void {
+    
+    // Creo un conjunto 'set' para realizar un seguimiento de los jugadores que van siendo eliminados
+    const eliminatedPlayers: Set<string> = new Set();
 
     startButton.addEventListener("click", (e) => {
-      e.preventDefault();
+        e.preventDefault();
 
-      const popUp: HTMLDivElement = createPopUp();
-      const avatars: HTMLCollectionOf<HTMLDivElement> =
-        document.getElementsByClassName(
-          "avatarItem"
-        ) as HTMLCollectionOf<HTMLDivElement>;
-      const avatarsArray: HTMLDivElement[] = Array.from(avatars);
+        const popUp: HTMLDivElement = createPopUp();
 
-      avatarsArray.forEach((avatar: HTMLDivElement, index: number) => {
-        avatar.classList.add("visible");
-        avatar.style.backgroundColor = "yellow";
-        avatar.dataset.avatarNumber = (index + 1).toString();
-      });
-    });
+        // Obtengo una lista de elementos con la clase "avatarItem" y lo convierto en un array
+        const avatars: HTMLDivElement[] = Array.from(document.getElementsByClassName("avatarItem") as HTMLCollectionOf<HTMLDivElement>);
 
-   /* const popUp: HTMLDivElement = createPopUp();
-    const avatars: HTMLCollectionOf<HTMLDivElement> = document.getElementsByClassName('avatarItem') as HTMLCollectionOf<HTMLDivElement>;
-    const avatarsArray: HTMLDivElement[] = Array.from(avatars);
+        // Creo un bucle que recorra todos los avatares que hay en la lista y que haga una acción específica en cada uno
+        avatars.forEach((avatar: HTMLDivElement, index: number) => {
+            setupAvatar(avatar, index);
+        });
 
-    avatarsArray.forEach((avatar: HTMLDivElement, index: number) => {
-        avatar.classList.add('visible');
-        avatar.style.backgroundColor = 'yellow';
-        avatar.dataset.avatarNumber = (index + 1).toString();
-    }); */
+        // Nombro la función shuffleArray (está en otro archivo .ts) para mezclar el array de avatares (es hacer un math.random básicamente)
+        const shuffledAvatars: HTMLDivElement[] = shuffleArray(avatars);
 
-    const remainingAvatars: HTMLDivElement[] = avatarsArray.slice(); 
+        let currentIndex: number = 0;
 
-    const intervalId: number = window.setInterval(() => {
-        const visibleAvatars: NodeListOf<HTMLDivElement> = document.querySelectorAll('.avatarItem.visible');
+        // Establezo un intervalo para las eliminaciones
+        const intervalId: number = window.setInterval(() => {
 
-        if (visibleAvatars.length > 0) {
-            const randomIndex: number = Math.floor(Math.random() * remainingAvatars.length);
-
-            const removedAvatar = remainingAvatars[randomIndex];
-            removedAvatar.classList.remove('visible');
-            removedAvatar.style.backgroundColor = '';
-
-            const avatarNumber = removedAvatar.dataset.avatarNumber;
-
-            if (avatarNumber) {
-                if (visibleAvatars.length - 1 === 1) {
-                    clearInterval(intervalId);
-                    setTimeout(() => {
-                        const remainingAvatar = remainingAvatars.find(avatar => avatar.classList.contains('visible'));
-                        const remainingAvatarNumber = remainingAvatar?.dataset.avatarNumber;
-                        if (remainingAvatarNumber) {
-                            updatePopUp(popUp, `Jugador eliminado: ${remainingAvatarNumber}`);
-                            showPopUp(popUp);
-                            remainingAvatar.style.display = 'none';
-                        }
-                    }, 100);
-                }
+            // Dentro del intervalo, verifico que se ha llegado al último avatar. Si es así, se detiene el intervalo y se llama a la función handleWinner 
+            // para nombrar al ganador. Si no es el último avatar, se llama a la función handleElimination para seguir ejecutando las eliminaciones. 
+            if (currentIndex >= shuffledAvatars.length - 1) {
+                clearInterval(intervalId);
+                handleWinner(shuffledAvatars[currentIndex], popUp);
+            } else {
+                handleElimination(shuffledAvatars[currentIndex], eliminatedPlayers, popUp);
+                currentIndex++;
             }
-
-           /* remainingAvatars.splice(randomIndex, 1); 
-        } /*else {
-            clearInterval(intervalId);
-            setTimeout(() => {
-                updatePopUp(popUp, '¡¡¡GANADOR!!!');
-                showPopUp(popUp);
-            }, 100); */
-        }
-    }, 100);
-}
-
-function createPopUp(): HTMLDivElement {
-    const popUp = document.createElement('div');
-    popUp.classList.add('popup');
-    document.body.appendChild(popUp);
-    return popUp;
-}
-
-function updatePopUp(popUp: HTMLDivElement, message: string): void {
-    popUp.innerText = message;
-}
-
-function showPopUp(popUp: HTMLDivElement): void {
-    popUp.style.display = 'block';
-    setTimeout(() => {
-        hidePopUp(popUp);
-    }, 2000);
-}
-
-function hidePopUp(popUp: HTMLDivElement): void {
-    popUp.style.display = 'none';
+        }, 3000);
+    });
 }
 
 retreiveStoredPlayers
+createPopUp
+hidePopUp
+showPopUp
+updatePopUp
+showAndHidePopUp
+shuffleArray
+setupAvatar
+handleWinner
+handleElimination
