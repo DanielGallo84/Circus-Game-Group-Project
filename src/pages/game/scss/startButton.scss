@@ -20,8 +20,26 @@
         width: 150px;
         height: 40px;
         margin-top: 20px;
+        text-decoration: none;
         cursor: pointer;
+
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
     }
+
+    button:hover {
+        box-shadow: 0 2px whitesmoke;
+        transform: translateY(2px);
+      }
+    
+    #resultsButton {
+        font-size: 20px;
+        text-shadow: none;
+        text-decoration: none;
+        cursor: pointer;
+        
+    }
+    
 }
 @media only screen and (min-width: 768px) {
     #bobContainer {
@@ -37,7 +55,12 @@
             height: 50px;
             margin-top: 25px;
             font-size: 28px;
-            
+        }
+
+        #resultsButton{
+            font-size: 20px;
+            text-decoration: none;
+            text-shadow: none;
         }
     }
 }
