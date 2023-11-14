@@ -1,4 +1,7 @@
+import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
 import { showPopUp, updatePopUp } from "./popUp";
+import { transformStorageArrays } from "./transformStorageArrays";
+import { updateLocalStorage } from "./updateLocalStorage";
 
 export let eliminatedPlayersLocal: string[] = []
 
@@ -23,7 +26,11 @@ export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlaye
     // Antes de hacerlo, se convierte el conjunto eliminatedPlayers a un array utilizando Array.from, y luego se convierte ese array a una cadena JSON antes de almacenarlo.
     localStorage.setItem('eliminatedPlayers', JSON.stringify(Array.from(eliminatedPlayers)));
 
-    updatePopUp(popUp, `Jugador eliminado: ${currentAvatar.dataset.avatarNumber}`);
+    updateLocalStorage()
+
+    transformStorageArrays()
+
+    updatePopUp(popUp, `Eliminated player: ${retreiveStoredPlayers()[currentAvatar.dataset.avatarNumber - 1].name}`);
 
     showPopUp(popUp);
 
