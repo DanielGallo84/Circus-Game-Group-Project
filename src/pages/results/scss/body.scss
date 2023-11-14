@@ -4,11 +4,16 @@
     background-size:cover;
     background-position:center;
     align-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
 }
-.resultsContainer{
-    height: 800px;
-    width: 400px;
-    border-color: 2px solid  rgb(0, 0, 0);
+#resultsContainer{
+    margin-top:10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    height: 70ch;
+    width: 80%;
+    border-color: 2px rgb(0, 0, 0);
     border-radius: 30px;
+    background-color: aqua;
+    justify-content: center;
 }
