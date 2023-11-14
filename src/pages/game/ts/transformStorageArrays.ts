@@ -7,8 +7,6 @@ export function transformStorageArrays () {
     retreiveStoredDeletedPlayers().forEach(element => {
         eliminated.push(retreiveStoredPlayers()[element - 1])
     });
-
-    console.log(eliminated)
 }
 
 export function uploadEliminatedToStorage() {
