@@ -4,12 +4,11 @@
     float: bottom;
     height: 15%;
     width: 100%;
-    margin-bottom: 5%;
     display:flex;
     justify-content: space-between;
     text-align: center;
     font-family: 'Luckiest Guy', 'cursive';
-    
+    margin-bottom: 5%;
     color: aqua;
     -webkit-text-stroke: 1px black;
     justify-content: space-around;
@@ -17,16 +16,20 @@
 #backContainer{
     height: 15%;
     width: 15%;
-    font-size: larger;
     
 }
 #playContainer{
     height: 15%;
     width: 15%;
-    font-size: larger;
 }
 #newContainer{
     height: 15%;
     width: 15%;
-    font-size: larger;
+}
+
+@media only screen and (min-width:768px){
+#footerContainer{
+    display: none;
+}
+
 }

@@ -5,6 +5,7 @@
     margin-top: 5%;
     text-align: center;
     vertical-align: middle;
+    display: block;
 }
 #titleHeader{
     margin-top: 5%;
@@ -13,4 +14,54 @@
     font-size: 3rem;
     color: aqua;
     -webkit-text-stroke: 1px black;
+}
+#headerContainerDesktop{
+    display:none;
+}
+#titleHeaderDesktop{
+    display: none;
+}
+@media only screen and (min-width:768px){
+
+    #headerContainer{
+        display: none;
+    }
+  
+#headerContainerDesktop{
+    margin-bottom: 3%;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Luckiest Guy', 'cursive';
+    display: flex;
+    color: aqua;
+    -webkit-text-stroke: 1px black;
+    justify-content: space-between;
+
+}
+#backContainer{
+    height: 10%;
+    width: 10%;
+    font-size: larger;
+    
+}
+#playContainer{
+    height: 10%;
+    width: 10%;
+    font-size: larger;
+   margin-left: 60%;
+}
+#newContainer{
+    height: 10%;
+    width: 10%;
+    font-size: larger;
+}
+#titleHeaderDesktop{
+    display:block;
+    font-family: 'Luckiest Guy', 'cursive';
+    font-size: 3rem;
+    color: aqua;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+}
 }
