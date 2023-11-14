@@ -8,7 +8,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    font-family: Arial, sans-serif;
+    font-family: Jolly Lodger;
     font-size: 16px;
     text-align: center;
     display: none;
@@ -35,5 +35,20 @@
     }
     50% {
         opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .popup {
+        padding: 25px;
+        font-size: 25px;
+        
+    }
+    
+    .popup::before {
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+       
     }
 }

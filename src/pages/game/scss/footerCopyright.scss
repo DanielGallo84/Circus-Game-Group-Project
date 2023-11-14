@@ -3,3 +3,10 @@
     color: white;
     padding-top: 30px;
 }
+
+@media only screen and (min-width: 768px) {
+    #footerCopyright {
+        margin-left: 1cap;
+        margin-bottom: 1cap;
+    }
+}

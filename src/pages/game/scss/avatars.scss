@@ -41,12 +41,7 @@
         display: none;
     }
 
-   
-
 }
-
-
-
 
 .popup {
     position: fixed;
@@ -90,69 +85,32 @@
 
 @media only screen and (min-width: 768px) {
     #avatarsContainer {
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-       
-    
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 99vw;
-        height: 70vh;
+        width: 90%;
+        height: 80vh;
         padding: 20px;
         margin-top: 10px;
-        margin-left: 2px;
+        text-align: center;
+        margin-left: 10%;
     
         img {
             height: 90%;
         }
     
         .avatarItem {
-
+            width: 18%;
+            height: 18%;
+           
             h3 {
                 font-size: 30px;
             }
-            width: 20%;
-            height: 20%;
-            
         }
-    
     }
     
     .popup {
         padding: 30px;
-    
-       
         font-size: 25px;
-        text-align: center;
-        display: none;
-        z-index: 1000;
     }
+   }
     
-    .popup::before {
-        content: '\00D7'; 
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    
-    .popup.visible {
-        display: block;
-        animation: fadeInOut 2s ease-in-out;
-    }
-    
-    @keyframes fadeInOut {
-        0%, 100% {
-            opacity: 0;
-        }
-        50% {
-            opacity: 1;
-        }
-    }
         
     
-}

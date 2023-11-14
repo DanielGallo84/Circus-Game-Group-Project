@@ -35,3 +35,18 @@
         flex-direction: column;
     }
 }
+
+@media only screen and (min-width: 768px){
+    #buttonsContainer {
+        img {
+            width: 45%;
+            height: 45%;
+        }
+    
+        h3 {
+            width: 45%;
+            height: 45%;
+        }
+    }
+     
+}
