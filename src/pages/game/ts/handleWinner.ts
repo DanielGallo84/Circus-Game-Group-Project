@@ -27,6 +27,8 @@ export function handleWinner(remainingAvatar: HTMLDivElement, popUp: HTMLDivElem
         showAndHidePopUp(popUp);
 
         resultsThirdPage()
+
+        document.getElementById('mainMelody').pause();
         
     }
 }

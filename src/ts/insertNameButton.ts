@@ -29,7 +29,7 @@ function insertName() {
     
     if (name != "") {
       
-      playAudio('./../assets/sounds/squeaky-toy-1.mp3', 0.2)
+      playAudio('squeakyToy', 0.2, false)
 
       let newPlayer = new Player(name, selectRandomAvatar())
 

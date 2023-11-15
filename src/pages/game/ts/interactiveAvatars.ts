@@ -1,3 +1,4 @@
+import { playAudio } from "../../../assets/tsModules/audio";
 import { handleElimination } from "./handleElimination";
 import { handleWinner } from "./handleWinner";
 import { createPopUp, hidePopUp, showAndHidePopUp, showPopUp, updatePopUp } from "./popUp";
@@ -14,6 +15,8 @@ export function selectRandomPlayer(): void {
 
     startButton.addEventListener("click", (e) => {
         e.preventDefault();
+
+        playAudio('mainMelody', 0.3, true)
 
         const popUp: HTMLDivElement = createPopUp();
 

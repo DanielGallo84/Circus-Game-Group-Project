@@ -1,8 +1,9 @@
-export function playAudio(url:string, volume:number, loop:boolean) {
-    let audio = new Audio(url);
+export function playAudio(id:string, volume:number, loop:boolean) {
+    let audio = document.getElementById(id)
     audio.volume = volume;
+    audio.loop = loop
     if (loop === undefined) {
-      loop = false;
+      audio.loop = false;
     }
     audio.play()
   }

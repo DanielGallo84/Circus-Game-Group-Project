@@ -29,7 +29,7 @@ function removePlayer() {
 
                 removePlayer()
 
-                playAudio('/assets/sounds/funny-spring-jump.mp3', 0.5, false)
+                playAudio('funnyJump', 0.5, false)
             })
         }
     }
