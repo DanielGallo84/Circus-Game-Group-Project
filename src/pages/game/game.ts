@@ -8,7 +8,7 @@ import { selectRandomPlayer } from './ts/interactiveAvatars';
 import { createPopUp, hidePopUp, showAndHidePopUp, showPopUp, updatePopUp } from './ts/popUp';
 import { setupAvatar } from './ts/setupAvatar';
 import { shuffleArray } from './ts/shuffleArray';
-import { deleteLocalStorage } from './ts/deleteArray';
+import { deleteLocalStorage, resetLocalStorage } from './ts/deleteArray';
 
 function game() {
     fillPlayers()
@@ -23,7 +23,8 @@ function game() {
     setupAvatar
     handleWinner
     handleElimination
-    deleteLocalStorage()
+    /*deleteLocalStorage()*/
+    resetLocalStorage
 }
 
 game ()
