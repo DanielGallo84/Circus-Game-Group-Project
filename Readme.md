@@ -2,11 +2,11 @@
 
 ## Organización de trabajo
 
-Nombres de archivos y sass:
+### Nombres de archivos y sass:
 
 Camel Case
 
-Nombres de las ramas
+### Nombres de las ramas
 
 Para features:
 
@@ -14,14 +14,21 @@ kebab-case
 
 feature/home-feature
 
-
-feature/homeFeature
-
 Para otras cosas:
 
 refactoring 
 fix
 etc
+
+### Unidades
+
+Para texto:
+
+vmax (1vmax, 2,5vmax etc)
+
+Para imagenes y secciones:
+
+% (100%, 50% etc)
 
 ## Fonts Usage
 

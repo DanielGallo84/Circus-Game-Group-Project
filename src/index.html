@@ -2,12 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/icons/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main page</title>
+    <title>Game page</title>
   </head>
   <body>
-    <header id="header"></header>
+    <main>
+      <section>
+        <div id="title_page1">
+          <h1>WELCOME TO<br>
+          THE CIRCUS GAME</h1>
+        </div>
+        
+          <form id="form_box">
+            <input id="nameField" type="insert_name" placeholder="Type your Name" required>
+            <button id="btn_name" type="button">INSERT NAME</button>
+            <div id="bobAndStartContainer">
+              <img id="bobImg" src="./assets/images/avatars/sideshowBob.png">
+              <button id="btn_start">START</button>
+            </div>
+          </form>
+       
+      </section>
+
+      <section id="homePlayersSection">
+        <h2 id="homePlayersTitle">Players</h2>
+        <div id="homePlayersList">
+          
+        </div>
+      </section>
+
+    </main>
     <script type="module" src="main.ts"></script>
   </body>
 </html>
