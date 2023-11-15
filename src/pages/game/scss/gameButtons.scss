@@ -24,15 +24,31 @@
     }
 
     .backContainer {
+
+        a {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+        
+    }
 
     .againContainer {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        
+        a {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    .newgameContainer {
+        
+        a {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
     }
 }
 

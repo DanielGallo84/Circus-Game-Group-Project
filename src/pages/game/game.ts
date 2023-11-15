@@ -1,6 +1,7 @@
 import { retreiveStoredPlayers } from '../../assets/tsModules/storedPlayersList';
 import '../../style.scss';
 import './scss/game.scss';
+import { resetLocalStorage } from './ts/deleteArray';
 import { fillPlayers } from './ts/fillPlayers';
 import { handleElimination } from './ts/handleElimination';
 import { handleWinner } from './ts/handleWinner';
@@ -22,6 +23,7 @@ function game() {
   setupAvatar
   handleWinner
   handleElimination
+  resetLocalStorage()
 }
 
 game ()
