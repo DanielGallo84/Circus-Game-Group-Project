@@ -9,25 +9,19 @@ export function deleteLocalStorage() {
     });
 }*/
 
-import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
-import { retreiveStoredDeletedPlayers } from "./storedDeletedPlayertsList";
+// import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
+// import { retreiveStoredDeletedPlayers } from "./storedDeletedPlayertsList";
 
-    
+export function resetLocalStorage() {
 
-
-export function resetLocalStorage () {
-
-    document.addEventListener('DOMContentLoaded', ()=>{
-        const newGame= document.getElementById('newGame');
+    let newGame = document.getElementById('newGame');
         
-        if(newGame){
-    
-            newGame.addEventListener('click', resetLocalStorage);
-            
-        }
-    });
+    newGame.addEventListener('click', (e) => {
+        e.preventDefault();
 
-    localStorage.clear();
-}
+        localStorage.clear();
+        location.href = '/index.html';
+    });        
+};
 
-retreiveStoredPlayers
+// retreiveStoredPlayers
