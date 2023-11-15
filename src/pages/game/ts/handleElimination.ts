@@ -1,3 +1,4 @@
+import { playAudio } from "../../../assets/tsModules/audio";
 import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
 import { showPopUp, updatePopUp } from "./popUp";
 import { transformStorageArrays } from "./transformStorageArrays";
@@ -27,6 +28,8 @@ export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlaye
     localStorage.setItem('eliminatedPlayers', JSON.stringify(Array.from(eliminatedPlayers)));
 
     updatePopUp(popUp, `Eliminated player: ${retreiveStoredPlayers()[currentAvatar.dataset.avatarNumber - 1].name}`);
+
+    playAudio('elimination', 0.5, false)
 
     showPopUp(popUp);
 

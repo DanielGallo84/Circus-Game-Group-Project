@@ -1,3 +1,4 @@
+import { playAudio } from "../../../assets/tsModules/audio";
 import { eliminatedPlayersLocal } from "./handleElimination";
 import { showAndHidePopUp, updatePopUp } from "./popUp";
 import { resultsThirdPage } from "./resultsButton";
@@ -29,6 +30,8 @@ export function handleWinner(remainingAvatar: HTMLDivElement, popUp: HTMLDivElem
         resultsThirdPage()
 
         document.getElementById('mainMelody').pause();
+
+        playAudio('applause', 0.5, false)
         
     }
 }
