@@ -98,13 +98,16 @@
 
 @media only screen and (min-width: 768px) {
 
-    #PlayersList {
-        width: 50%;
+    #resultsContainer {
+        margin-top: 3%;
+        margin-bottom: 2%;
+        padding: 10px;
         display: grid;
         grid-template-columns: repeat(3, 33%);
         overflow-y: unset;
         gap: 5px;
         grid-auto-rows: minmax(50px, 25%);
+        grid-auto-flow: dense;
     }
 
     .PlayerDiv {

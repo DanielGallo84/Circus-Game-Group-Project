@@ -21,12 +21,6 @@
     display: none;
 }
 
-#backContainer{
-    height: 10px;
-    width: 10px;
-    font-size: larger;
-    
-}
 @media only screen and (min-width:768px){
 
     #headerContainer{
@@ -45,23 +39,26 @@
     justify-content: space-between;
 
 }
+
 #backContainer{
     height: 10%;
     width: 10%;
     font-size: larger;
-    
 }
+
 #playContainer{
     height: 10%;
     width: 10%;
     font-size: larger;
    margin-left: 60%;
 }
+
 #newContainer{
     height: 10%;
     width: 10%;
     font-size: larger;
 }
+
 #titleHeaderDesktop{
     display:block;
     font-family: 'Luckiest Guy', 'cursive';

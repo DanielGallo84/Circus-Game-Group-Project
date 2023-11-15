@@ -1,10 +1,18 @@
 #background{
     background-image: url('./../../../assets/images/backgroundPics/spiralBackground.png');
-    display:flex;
+    // display:flex;
+    // flex-direction: column;
+    // align-content: center;
+    // justify-content: center;
     background-size:cover;
     background-position:center;
-    align-content: space-between;
+}
+
+#resultsMain {
+    display:flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 // #resultsContainer{
@@ -30,7 +38,6 @@
         height: 10%;
         width: 10%;
         justify-self: center;
-        
         margin-left: 15%;
 
     }
