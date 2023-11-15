@@ -1,5 +1,6 @@
 import { eliminatedPlayersLocal } from "./handleElimination";
 import { showAndHidePopUp, updatePopUp } from "./popUp";
+import { resultsThirdPage } from "./resultsButton";
 import { eliminated, transformStorageArrays, uploadEliminatedToStorage } from "./transformStorageArrays";
 import { updateLocalStorage } from "./updateLocalStorage";
 
@@ -24,6 +25,8 @@ export function handleWinner(remainingAvatar: HTMLDivElement, popUp: HTMLDivElem
         updatePopUp(popUp, `And the WINNER is: ${eliminated[eliminated.length - 1].name}!!!`);
 
         showAndHidePopUp(popUp);
+
+        resultsThirdPage()
         
     }
 }

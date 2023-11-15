@@ -3,6 +3,24 @@
     justify-content: center;
     text-align: center;
 
+    #resultsButton {
+        display: none;
+
+        a {
+            border-radius: 25px;
+            background-color: #E23838;
+            color: #8AE3D8;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            font-family: 'Luckiest Guy', cursive;
+            width: 150px;
+            height: 40px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        
+    }
+
     img {
         width: 10%;
         height: 10%;
