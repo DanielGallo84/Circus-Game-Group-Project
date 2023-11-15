@@ -1,5 +1,6 @@
 import { eliminatedPlayersLocal } from "./handleElimination";
 import { showAndHidePopUp, updatePopUp } from "./popUp";
+import { resultsThirdPage } from "./resultsButton";
 import { transformStorageArrays, uploadEliminatedToStorage } from "./transformStorageArrays";
 import { updateLocalStorage } from "./updateLocalStorage";
 
@@ -24,6 +25,9 @@ export function handleWinner(remainingAvatar: HTMLDivElement, popUp: HTMLDivElem
         transformStorageArrays();
 
         uploadEliminatedToStorage();
+
+        resultsThirdPage();
+        
         
     }
 }

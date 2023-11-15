@@ -37,6 +37,16 @@
         text-shadow: none;
         text-decoration: none;
         cursor: pointer;
+        display: none;
+
+        a{
+            text-decoration: none;
+            text-shadow: none;
+            color: #8AE3D8;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            
+        }
         
     }
     
