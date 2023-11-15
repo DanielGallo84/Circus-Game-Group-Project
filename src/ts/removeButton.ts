@@ -1,3 +1,4 @@
+import { playAudio } from "../assets/tsModules/audio";
 import { players } from "../assets/tsModules/playersArray";
 import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
 import { addToLocalStorage } from "./addToLocalStorage";
@@ -27,6 +28,8 @@ function removePlayer() {
                 hideShowPlayersList()
 
                 removePlayer()
+
+                playAudio('/assets/sounds/funny-spring-jump.mp3', 0.5, false)
             })
         }
     }
