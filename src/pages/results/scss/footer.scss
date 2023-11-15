@@ -1,0 +1,46 @@
+
+#footerContainer{
+    position: bottom;
+    float: bottom;
+    height: 15%;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Luckiest Guy', 'cursive';
+    margin-bottom: 5%;
+    color: aqua;
+    -webkit-text-stroke: 1px black;
+    justify-content: space-around;
+}
+#backContainer{
+    height: 15%;
+    width: 15%;
+    
+}
+#playContainer{
+    height: 15%;
+    width: 15%;
+}
+#newContainer{
+    height: 15%;
+    width: 15%;
+}
+#copyright{
+    display:none;
+}
+@media only screen and (min-width:768px){
+    #footerContainer{
+        display: none;
+    }
+    #copyright{
+        color: black;
+        font-family: 'Jolly Lodger' ;
+        font-size: larger;
+        font-weight: bold;
+        display:block;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+}
