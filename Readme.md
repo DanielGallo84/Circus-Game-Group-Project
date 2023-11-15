@@ -105,6 +105,14 @@ The <b>assets</b> folder contains all the assets for the project, <b>including i
 ![image](https://github.com/MarkWebDeveloper/Circus-Game-Group-Project/assets/146768253/3fd372c0-a209-4b32-a651-23949a7d6dcc)
 ![image](https://github.com/MarkWebDeveloper/Circus-Game-Group-Project/assets/146768253/13085db5-f365-4594-b0ae-5fa2c5bb994c)
 
+## TEAM
 
+- [Vero Sampedro](https://github.com/verosampedro)
 
+- [Mark Kil](https://github.com/MarkWebDeveloper)
 
+- [Ana García](https://github.com/anagarlopez)
+
+- [Isabel Aboli](https://github.com/IsabelAboliMartinez)
+
+ - [Daniel Gallo](https://github.com/DanielGallo84)
