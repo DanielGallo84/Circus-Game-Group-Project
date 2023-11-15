@@ -27,44 +27,57 @@
         display: none;
     }
   
-#headerContainerDesktop{
-    margin-bottom: 0%;
-    width: 100%;
-    justify-content: space-between;
-    text-align: center;
-    font-family: 'Luckiest Guy', 'cursive';
-    display: flex;
-    color: aqua;
-    -webkit-text-stroke: 1px black;
-    justify-content: space-between;
+    #headerContainerDesktop{
+        margin-bottom: 0%;
+        width: 100%;
+        justify-content: space-between;
+        text-align: center;
+        font-family: 'Luckiest Guy', 'cursive';
+        display: flex;
+        color: aqua;
+        -webkit-text-stroke: 1px black;
+        justify-content: space-between;
 
-}
+    }
 
-#backContainer{
-    height: 10%;
+    #backContainer{
+        width: 10%;
+        font-size: larger;
+
+        button {
+            width: 40%;
+        }
+    }
+
+    #playContainer{
+        height: 10%;
+        width: 10%;
+        font-size: larger;
+    margin-left: 60%;
+
     width: 10%;
-    font-size: larger;
-}
+        font-size: larger;
 
-#playContainer{
-    height: 10%;
-    width: 10%;
-    font-size: larger;
-   margin-left: 60%;
-}
+        button {
+            width: 40%;
+        }
+    }
 
-#newContainer{
-    height: 10%;
-    width: 10%;
-    font-size: larger;
-}
+    #newContainer{
+        width: 10%;
+        font-size: larger;
 
-#titleHeaderDesktop{
-    display:block;
-    font-family: 'Luckiest Guy', 'cursive';
-    font-size: 2rem;
-    color: aqua;
-    -webkit-text-stroke: 1px black;
-    text-align: center;
-}
+        button {
+            width: 40%;
+        }
+    }
+
+    #titleHeaderDesktop{
+        display:block;
+        font-family: 'Luckiest Guy', 'cursive';
+        font-size: 2rem;
+        color: aqua;
+        -webkit-text-stroke: 1px black;
+        text-align: center;
+    }
 }
