@@ -20,6 +20,57 @@
         width: 150px;
         height: 40px;
         margin-top: 20px;
+        text-decoration: none;
         cursor: pointer;
+
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    button:hover {
+        box-shadow: 0 2px whitesmoke;
+        transform: translateY(2px);
+      }
+    
+    #resultsButton {
+        font-size: 20px;
+        text-shadow: none;
+        text-decoration: none;
+        cursor: pointer;
+        display: none;
+
+        a{
+            text-decoration: none;
+            text-shadow: none;
+            color: #8AE3D8;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            
+        }
+        
+    }
+    
+}
+@media only screen and (min-width: 768px) {
+    #bobContainer {
+        img {
+            width: 4%;
+            height: 5%;
+            margin-top: 5px;
+        }
+    
+        button {
+            
+            width: 150px;
+            height: 50px;
+            margin-top: 25px;
+            font-size: 28px;
+        }
+
+        #resultsButton{
+            font-size: 20px;
+            text-decoration: none;
+            text-shadow: none;
+        }
     }
 }

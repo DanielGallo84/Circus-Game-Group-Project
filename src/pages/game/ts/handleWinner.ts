@@ -1,6 +1,7 @@
 import { eliminatedPlayersLocal } from "./handleElimination";
 import { showAndHidePopUp, updatePopUp } from "./popUp";
 import { eliminated, transformStorageArrays, uploadEliminatedToStorage } from "./transformStorageArrays";
+import { resultsThirdPage } from "./resultsButton";
 import { updateLocalStorage } from "./updateLocalStorage";
 
 // Esta función toma 2 parámetros. "remainingAvatar" que es el avatar que ha ganado y el pop-up del ganador.
@@ -24,7 +25,8 @@ export function handleWinner(remainingAvatar: HTMLDivElement, popUp: HTMLDivElem
         updatePopUp(popUp, `And the WINNER is: ${eliminated[eliminated.length - 1].name}!!!`);
 
         showAndHidePopUp(popUp);
-        
+
+        resultsThirdPage();
     }
 }
 
