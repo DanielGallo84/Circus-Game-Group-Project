@@ -1,3 +1,6 @@
+import { backButton } from '../../assets/tsModules/backButton';
+import { newGameButton } from '../../assets/tsModules/newGameButton';
+import { playAgainButton } from '../../assets/tsModules/playAgainButton';
 import { retreiveStoredPlayers } from '../../assets/tsModules/storedPlayersList';
 import '../../style.scss';
 import './scss/game.scss';
@@ -22,6 +25,9 @@ function game() {
   setupAvatar
   handleWinner
   handleElimination
+  newGameButton()
+  playAgainButton()
+  backButton()
 }
 
 game ()
