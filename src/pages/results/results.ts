@@ -7,9 +7,12 @@ import { fillResults } from './ts/fillResults'
 
 function results() {
     fillResults()
-    backButton()
-    playAgainButton()
-    newGameButton()
+    backButton('backResultsDesktop')
+    playAgainButton('playAgainResultsDesktop')
+    newGameButton('newGameResultsDesktop')
+    backButton('backResultsMobile')
+    playAgainButton('playAgainResultsMobile')
+    newGameButton('newGameResultsMobile')
 }
 
 results()

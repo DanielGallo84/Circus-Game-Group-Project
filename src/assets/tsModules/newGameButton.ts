@@ -1,7 +1,6 @@
-export function newGameButton() {
+export function newGameButton(buttonId: string) {
 
-    let newGame = document.getElementById('newGame');
-    let newGame2 = document.getElementById('newGame2');
+    let newGame = document.getElementById(buttonId) as HTMLImageElement;
         
     newGame.addEventListener('click', (e) => {
         e.preventDefault();
@@ -9,11 +8,4 @@ export function newGameButton() {
         localStorage.clear();
         location.href = '/index.html';
     });      
-    
-    newGame2.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        localStorage.clear();
-        location.href = '/index.html';
-    });    
 };

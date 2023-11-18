@@ -25,9 +25,9 @@ function game() {
   setupAvatar
   handleWinner
   handleElimination
-  newGameButton()
-  playAgainButton()
-  backButton()
+  backButton('backGame')
+  newGameButton('newGameGame')
+  playAgainButton('playAgainGame')
 }
 
 game ()
