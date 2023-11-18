@@ -9,18 +9,18 @@ import { removePlayer } from "./removeButton";
 import { restorePlayersList } from "./restorePlayersList";
 import { selectRandomAvatar } from "./selectRandomAvatar";
 
-let nameButton = document.getElementById("btn_name");
-let formData = document.getElementById("form_box");
+let nameButton = document.getElementById("btn_name") as HTMLButtonElement;
+let formData = document.getElementById("form_box") as HTMLFormElement;
 
 function insertName() {
   nameButton.addEventListener("click", (e) => {
     e.preventDefault();
       
-    let name = document.getElementById("nameField").value;
+    let name = (<HTMLInputElement>document.getElementById("nameField")).value
 
     if (name == "") {
 
-      playAudio('./../assets/sounds/failure-drum-sound-effect-2.mp3', 0.4)
+      playAudio('./../assets/sounds/failure-drum-sound-effect-2.mp3', 0.4, false)
 
       alert(
         "Please, make sure to type in a name."

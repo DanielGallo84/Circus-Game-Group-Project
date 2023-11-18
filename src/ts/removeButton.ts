@@ -12,8 +12,8 @@ function removePlayer() {
         retreiveStoredPlayers()
         
         for (let index = 0; index < retreiveStoredPlayers().length; index++) {
-            let player = document.getElementById(`homePlayer${index + 1}`)
-            let removeButton = document.getElementById(`removeButton${index + 1}`)
+            let player = document.getElementById(`homePlayer${index + 1}`) as HTMLDivElement
+            let removeButton = document.getElementById(`removeButton${index + 1}`) as HTMLButtonElement
     
             removeButton.addEventListener("click", (e) => {
                 e.preventDefault();

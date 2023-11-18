@@ -10,14 +10,14 @@ function applyNewName() {
         
         for (let index = 1; index <= retreiveStoredPlayers().length; index++) {
 
-            let nameAndAvatar = document.getElementById(`nameAndAvatarContainer${index}`)
-            let editButton = document.getElementById(`editButton${index}`)
-            let doneButton = document.getElementById(`doneButton${index}`)
+            let nameAndAvatar = document.getElementById(`nameAndAvatarContainer${index}`) as HTMLDivElement
+            let editButton = document.getElementById(`editButton${index}`) as HTMLButtonElement
+            let doneButton = document.getElementById(`doneButton${index}`) as HTMLButtonElement
     
             doneButton.addEventListener("click", (e) => {
                 e.preventDefault();
 
-                let nameInput = document.getElementById(`nameInput${index}`).value
+                let nameInput = (<HTMLInputElement>document.getElementById(`nameInput${index}`)).value
     
                 nameAndAvatar.innerHTML = /* html */ `
                 <p class="homePlayerName" id="playerName${index}">${nameInput}</p>

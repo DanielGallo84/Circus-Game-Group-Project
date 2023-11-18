@@ -29,7 +29,9 @@ export function handleWinner(remainingAvatar: HTMLDivElement, popUp: HTMLDivElem
 
         resultsThirdPage()
 
-        document.getElementById('mainMelody').pause();
+        let mainMelody = document.getElementById('mainMelody') as HTMLAudioElement
+
+        mainMelody.pause();
 
         playAudio('applause', 0.5, false)
         

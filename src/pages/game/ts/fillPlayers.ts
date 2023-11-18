@@ -3,7 +3,7 @@ import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersLi
 retreiveStoredPlayers
 
 export function fillPlayers () {
-   let avatarsContainer = document.getElementById('avatarsContainer')
+   let avatarsContainer = document.getElementById('avatarsContainer') as HTMLDivElement
 
     for (let index = 0; index < retreiveStoredPlayers().length; index++) {
         avatarsContainer.innerHTML += /*html*/ `

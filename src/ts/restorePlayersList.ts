@@ -1,13 +1,13 @@
 import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
 
-let playersList = document.querySelector('#homePlayersList')
+let playersList = document.querySelector('#homePlayersList') as HTMLDivElement
 
 function restorePlayersList() {
 
     if (retreiveStoredPlayers() != null) {
         playersList.innerHTML = /* html */ ``
 
-    retreiveStoredPlayers().forEach(function(element, index){
+    retreiveStoredPlayers().forEach(function(element: any, index: number){
         playersList.innerHTML += /* html */ `
         <div class="homePlayerDiv" id="homePlayer${index + 1}">
         <div class="nameAndAvatarContainer" id="nameAndAvatarContainer${index + 1}">

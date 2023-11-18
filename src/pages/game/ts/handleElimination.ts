@@ -1,8 +1,6 @@
 import { playAudio } from "../../../assets/tsModules/audio";
 import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
 import { showPopUp, updatePopUp } from "./popUp";
-import { transformStorageArrays } from "./transformStorageArrays";
-import { updateLocalStorage } from "./updateLocalStorage";
 
 export let eliminatedPlayersLocal: string[] = []
 
@@ -27,7 +25,7 @@ export function handleElimination(currentAvatar: HTMLDivElement, eliminatedPlaye
     // Antes de hacerlo, se convierte el conjunto eliminatedPlayers a un array utilizando Array.from, y luego se convierte ese array a una cadena JSON antes de almacenarlo.
     localStorage.setItem('eliminatedPlayers', JSON.stringify(Array.from(eliminatedPlayers)));
 
-    updatePopUp(popUp, `Eliminated player: ${retreiveStoredPlayers()[currentAvatar.dataset.avatarNumber - 1].name}`);
+    updatePopUp(popUp, `Eliminated player: ${retreiveStoredPlayers()[<any>currentAvatar.dataset.avatarNumber - 1].name}`);
 
     playAudio('elimination', 0.5, false)
 

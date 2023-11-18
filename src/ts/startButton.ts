@@ -1,6 +1,6 @@
 import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
 
-let startButton = document.getElementById("btn_start");
+let startButton = document.getElementById("btn_start") as HTMLButtonElement;
 
 function startGameButton() {
 

@@ -1,5 +1,5 @@
 function retreiveStoredPlayers() {
-    let storedPlayers = JSON.parse(localStorage.getItem("players"));
+    let storedPlayers = JSON.parse(<any>localStorage.getItem("players"));
     return storedPlayers
 }
 

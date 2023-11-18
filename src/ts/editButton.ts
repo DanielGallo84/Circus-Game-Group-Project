@@ -7,9 +7,9 @@ function editName() {
         retreiveStoredPlayers()
         
         for (let index = 1; index <= retreiveStoredPlayers().length; index++) {
-            let nameAndAvatar = document.getElementById(`nameAndAvatarContainer${index}`)
-            let editButton = document.getElementById(`editButton${index}`)
-            let doneButton = document.getElementById(`doneButton${index}`)
+            let nameAndAvatar = document.getElementById(`nameAndAvatarContainer${index}`) as HTMLDivElement
+            let editButton = document.getElementById(`editButton${index}`) as HTMLButtonElement
+            let doneButton = document.getElementById(`doneButton${index}`) as HTMLButtonElement
     
             editButton.addEventListener("click", (e) => {
                 e.preventDefault();

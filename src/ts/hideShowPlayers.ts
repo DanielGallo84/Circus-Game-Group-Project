@@ -1,5 +1,5 @@
-let playersList = document.getElementById('homePlayersList')
-let playersSection = document.getElementById('homePlayersSection')
+let playersList = document.getElementById('homePlayersList') as HTMLDivElement
+let playersSection = document.getElementById('homePlayersSection') as HTMLElement
 
 export function hideShowPlayersList() {
     if (playersList.innerHTML == '') {

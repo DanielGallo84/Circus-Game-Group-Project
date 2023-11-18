@@ -1,12 +1,12 @@
 import { playAudio } from "../../../assets/tsModules/audio";
 import { handleElimination } from "./handleElimination";
 import { handleWinner } from "./handleWinner";
-import { createPopUp, hidePopUp, showAndHidePopUp, showPopUp, updatePopUp } from "./popUp";
+import { createPopUp } from "./popUp";
 import { setupAvatar } from "./setupAvatar";
 import { shuffleArray } from "./shuffleArray";
 
 
-const startButton: HTMLButtonElement | null = document.getElementById('startButton') as HTMLButtonElement;
+const startButton = document.getElementById('startButton') as HTMLButtonElement;
 
 export function selectRandomPlayer(): void {
     

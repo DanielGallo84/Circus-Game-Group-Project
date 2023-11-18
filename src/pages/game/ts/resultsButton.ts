@@ -1,5 +1,5 @@
-let startButton = document.getElementById("startButton");
-let resultsButton = document.getElementById("resultsButton");
+let startButton = document.getElementById("startButton") as HTMLButtonElement;
+let resultsButton = document.getElementById("resultsButton") as HTMLButtonElement;
 
 export function resultsThirdPage() {
     startButton.style.display="none";

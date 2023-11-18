@@ -4,7 +4,7 @@ import { retreiveStoredDeletedPlayers } from "./storedDeletedPlayertsList";
 export let eliminated: { name: string, avatar: string }[] = [];
 
 export function transformStorageArrays () {
-    retreiveStoredDeletedPlayers().forEach(element => {
+    retreiveStoredDeletedPlayers().forEach((element: any) => {
         eliminated.push(retreiveStoredPlayers()[element - 1])
     });
 }

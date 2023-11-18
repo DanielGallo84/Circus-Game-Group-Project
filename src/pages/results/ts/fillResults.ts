@@ -1,9 +1,9 @@
 import { retreiveStoredEliminatedPlayers } from "./storedEliminatedList"
 
-let resultsDiv = document.getElementById("resultsContainer")
+let resultsDiv = document.getElementById("resultsContainer") as HTMLDivElement
 
 export function fillResults() {
-    retreiveStoredEliminatedPlayers().reverse().forEach(function(element, index){
+    retreiveStoredEliminatedPlayers().reverse().forEach(function(element: any, index: number){
         resultsDiv.innerHTML += /* html */ `
         <div class="PlayerDiv" id="Player${index + 1}">
         <p class="roundText" id="round${index + 1}">Round ${retreiveStoredEliminatedPlayers().length - (index)}: </p>
