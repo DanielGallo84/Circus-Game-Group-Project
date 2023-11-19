@@ -5,6 +5,6 @@ export function playAgainButton (buttonId: string){
     playAgain.addEventListener('click', (e) => {
         e.preventDefault();
 
-        location.href = '/pages/game/index.html';
+        location.href = './../pages/game/index.html';
     }); 
 }

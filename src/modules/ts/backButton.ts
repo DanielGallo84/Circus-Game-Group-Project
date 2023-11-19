@@ -4,6 +4,6 @@ export function backButton(buttonId: string){
     back.addEventListener('click', (e) => {
         e.preventDefault();
 
-        location.href = '/index.html';
+        location.href = './../index.html';
     });     
 }
