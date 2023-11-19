@@ -1,4 +1,4 @@
-import { avatars } from "../assets/tsModules/avatarsArray";
+import { avatars } from "../modules/ts/avatarsArray";
 
 function selectRandomAvatar() {
     let selectedAvatar: string = avatars[Math.floor(Math.random() * avatars.length)]

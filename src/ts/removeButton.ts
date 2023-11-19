@@ -1,6 +1,6 @@
-import { playAudio } from "../assets/tsModules/audio";
-import { players } from "../assets/tsModules/playersArray";
-import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
+import { playAudio } from "../modules/ts/audio";
+import { players } from "../modules/ts/playersArray";
+import { retreiveStoredPlayers } from "../modules/ts/storedPlayersList";
 import { addToLocalStorage } from "./addToLocalStorage";
 import { hideShowPlayersList } from "./hideShowPlayers";
 import { restorePlayersList } from "./restorePlayersList";

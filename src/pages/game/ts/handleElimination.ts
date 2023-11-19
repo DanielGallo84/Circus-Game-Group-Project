@@ -1,5 +1,5 @@
-import { playAudio } from "../../../assets/tsModules/audio";
-import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
+import { playAudio } from "../../../modules/ts/audio";
+import { retreiveStoredPlayers } from "../../../modules/ts/storedPlayersList";
 import { showPopUp, updatePopUp } from "./popUp";
 
 export let eliminatedPlayersLocal: string[] = []
