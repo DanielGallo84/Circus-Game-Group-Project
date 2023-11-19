@@ -14,7 +14,7 @@ function startGameButton() {
     }
 
     if (retreiveStoredPlayers().length >= 2) {
-      location.href = "./../pages/game/index.html";
+      location.href = "./pages/game/index.html";
     }
 
     
