@@ -1,5 +1,5 @@
-import { players } from "../assets/tsModules/playersArray";
-import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
+import { players } from "../modules/ts/playersArray";
+import { retreiveStoredPlayers } from "../modules/ts/storedPlayersList";
 import { addToLocalStorage } from "./addToLocalStorage";
 
 function applyNewName() {

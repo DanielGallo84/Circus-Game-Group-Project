@@ -1,4 +1,4 @@
-import { playAudio } from "../../../assets/tsModules/audio";
+import { playAudio } from "../../../modules/ts/audio";
 import { eliminatedPlayersLocal } from "./handleElimination";
 import { showAndHidePopUp, updatePopUp } from "./popUp";
 import { resultsThirdPage } from "./resultsButton";

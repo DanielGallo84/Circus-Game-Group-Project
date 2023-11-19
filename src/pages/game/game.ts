@@ -1,7 +1,7 @@
-import { backButton } from '../../assets/tsModules/backButton';
-import { newGameButton } from '../../assets/tsModules/newGameButton';
-import { playAgainButton } from '../../assets/tsModules/playAgainButton';
-import { retreiveStoredPlayers } from '../../assets/tsModules/storedPlayersList';
+import { backButton } from './../../modules/ts/backButton';
+import { newGameButton } from './../../modules/ts/newGameButton';
+import { playAgainButton } from './../../modules/ts/playAgainButton';
+import { retreiveStoredPlayers } from './../../modules/ts/storedPlayersList';
 import '../../style.scss';
 import './scss/game.scss';
 import { fillPlayers } from './ts/fillPlayers';

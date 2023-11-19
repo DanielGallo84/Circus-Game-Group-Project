@@ -1,6 +1,6 @@
-import { playAudio } from "../assets/tsModules/audio";
-import Player from "../assets/tsModules/playerClass";
-import { players } from "../assets/tsModules/playersArray";
+import { playAudio } from "../modules/ts/audio";
+import Player from "../modules/ts/playerClass";
+import { players } from "../modules/ts/playersArray";
 import { addToLocalStorage } from "./addToLocalStorage";
 import { applyNewName } from "./doneButton";
 import { editName } from "./editButton";

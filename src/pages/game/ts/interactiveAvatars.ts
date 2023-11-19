@@ -1,4 +1,4 @@
-import { playAudio } from "../../../assets/tsModules/audio";
+import { playAudio } from "../../../modules/ts/audio";
 import { handleElimination } from "./handleElimination";
 import { handleWinner } from "./handleWinner";
 import { createPopUp } from "./popUp";

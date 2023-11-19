@@ -1,4 +1,4 @@
-import { retreiveStoredPlayers } from "../../../assets/tsModules/storedPlayersList";
+import { retreiveStoredPlayers } from "../../../modules/ts/storedPlayersList";
 import { retreiveStoredDeletedPlayers } from "./storedDeletedPlayertsList";
 
 export let eliminated: { name: string, avatar: string }[] = [];

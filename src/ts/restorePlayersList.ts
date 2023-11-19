@@ -1,4 +1,4 @@
-import { retreiveStoredPlayers } from "../assets/tsModules/storedPlayersList";
+import { retreiveStoredPlayers } from "../modules/ts/storedPlayersList";
 
 let playersList = document.querySelector('#homePlayersList') as HTMLDivElement
 
