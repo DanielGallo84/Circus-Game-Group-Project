@@ -1,6 +1,6 @@
 ## GitHub Pages link
 
-https://github.com/MarkWebDeveloper/Circus-Game-Group-Project
+https://markwebdeveloper.github.io/Circus-Game-Group-Project/
 
 # WELCOME TO THE CIRCUS GAME!
 
