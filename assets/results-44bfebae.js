@@ -1,4 +1,4 @@
-import"./style-e74fcfd1.js";import{b as t,p as s,n as l}from"./playAgainButton-c3d168b6.js";function r(){return JSON.parse(localStorage.getItem("eliminated")||"")}let n=document.getElementById("resultsContainer");function i(){r().reverse().forEach(function(a,e){n.innerHTML+=`
+import"./style-e74fcfd1.js";import{b as t,p as s,n as l}from"./playAgainButton-fec0f807.js";function r(){return JSON.parse(localStorage.getItem("eliminated")||"")}let n=document.getElementById("resultsContainer");function i(){r().reverse().forEach(function(a,e){n.innerHTML+=`
         <div class="PlayerDiv" id="Player${e+1}">
         <p class="roundText" id="round${e+1}">Round ${r().length-e}: </p>
             <div class="nameAndAvatarContainer" id="nameAndAvatarContainer${e+1}">
