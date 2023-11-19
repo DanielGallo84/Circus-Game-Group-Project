@@ -1,4 +1,4 @@
-import"./style-e74fcfd1.js";import{b as h,n as v,p as I}from"./playAgainButton-c75fc814.js";import{r as n,p as r}from"./audio-63414c73.js";function B(){let e=document.getElementById("avatarsContainer");for(let t=0;t<n().length;t++)e.innerHTML+=`
+import"./style-e74fcfd1.js";import{b as h,n as v,p as I}from"./playAgainButton-b72397c4.js";import{r as n,p as r}from"./audio-63414c73.js";function B(){let e=document.getElementById("avatarsContainer");for(let t=0;t<n().length;t++)e.innerHTML+=`
 
         <div data-avatar-name="avatar1" class="avatarItem">
 
